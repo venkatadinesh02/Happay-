@@ -1,0 +1,230 @@
+
+"########################################Sample input for addAnAuthor()###################################"
+{
+    "Book ID": "B1001",
+    "Title": "Jungle Book",
+    "Author ID": "A7646",
+    "Publisher": "Dinesh",
+    "Publish Date": "23-8-1998",
+    "Category ID": "C7244",
+    "Price": 999,
+    "Sold Count": 90
+}
+
+
+
+"########################################Sample input for addBookToCatalog()###################################"
+{
+	"Author ID": "A6762",
+	"Name": "JK Rowling",
+	"Phone number": "8777930956",
+	"Birth Date": "30-10-1999",
+	"Death Date": "14-09-2022"
+}
+
+
+
+"########################################Sample input for addCategory()###################################"
+{
+	"CategoryId": "C1765",
+	"CategoryName": "Horrer"
+}
+
+
+
+
+"########################################Sample input for getlistofcategories()###################################"
+[{
+		"CategoryId": "C1765",
+		"CategoryName": "Horrer"
+	},
+	{
+		"CategoryId": "C1005",
+		"CategoryName": "Thriller"
+	},
+	{
+		"CategoryId": "C1006",
+		"CategoryName": "Romance"
+	},
+	{
+		"CategoryId": "C1009",
+		"CategoryName": "Comedy"
+	},
+	{
+		"CategoryId": "C1765",
+		"CategoryName": "Horrer"
+	},
+	{
+		"CategoryId": "C1765",
+		"CategoryName": "Horrer"
+	}
+]
+
+
+
+
+"########################################Sample input for getlistofauthors()###################################"
+[{
+    "Author ID": "A6762",
+    "Name": "JK Rowling",
+    "Phone number": "8777930956",
+    "Birth Date": "30-10-1999",
+    "Death Date": "14-09-2022"
+}]
+
+
+
+
+
+"########################################Sample input for getMostBooksSoldByAuthor()###################################"
+[{
+	"input_authorid": "A7646",
+	"values": [{
+			"Book ID": "B1001",
+			"Title": "Jungle Book",
+			"Author ID": "A7646",
+			"Publisher": "Dinesh",
+			"Publish Date": "23-8-1998",
+			"Category ID": "C7244",
+			"Price": 999,
+			"Sold Count": 90
+		},
+		{
+			"Book ID": "B1002",
+			"Title": "Marvel",
+			"Author ID": "A7646",
+			"Publisher": "Kiran",
+			"Publish Date": "23-8-2001",
+			"Category ID": "C1006",
+			"Price": 2999,
+			"Sold Count": 80
+		},
+		{
+			"Book ID": "B1003",
+			"Title": "Iron Man",
+			"Author ID": "A7646",
+			"Publisher": "Ram",
+			"Publish Date": "23-8-1999",
+			"Category ID": "C1009",
+			"Price": 1999,
+			"Sold Count": 1090
+		}
+	]
+}]
+
+
+"########################################Sample input for getMostBooksSoldByCategory()###################################"
+[{
+	"input_categoryid": "C7244",
+	"values": [{
+			"Book ID": "B1001",
+			"Title": "Jungle Book",
+			"Author ID": "A7646",
+			"Publisher": "Dinesh",
+			"Publish Date": "23-8-1998",
+			"Category ID": "C7244",
+			"Price": 999,
+			"Sold Count": 90
+		},
+		{
+			"Book ID": "B1002",
+			"Title": "Marvel",
+			"Author ID": "A7646",
+			"Publisher": "Kiran",
+			"Publish Date": "23-8-2001",
+			"Category ID": "C7244",
+			"Price": 2999,
+			"Sold Count": 80
+		},
+		{
+			"Book ID": "B1003",
+			"Title": "Iron Man",
+			"Author ID": "A7646",
+			"Publisher": "Ram",
+			"Publish Date": "23-8-1999",
+			"Category ID": "C1009",
+			"Price": 1999,
+			"Sold Count": 1090
+		}
+	]
+}]
+
+
+
+"########################################Sample input for searchbook()###################################"
+[{
+	"input_partial_title": "gle",
+	"input_partial_author": "ya",
+	"values": [{
+			"Book ID": "B1001",
+			"Title": "Jungle Book",
+			"Author ID": "A7646",
+			"Author name": "Kiran",
+			"Publisher": "Dinesh",
+			"Publish Date": "23-8-1998",
+			"Category ID": "C7244",
+			"Price": 999,
+			"Sold Count": 90
+		},
+		{
+			"Book ID": "B1002",
+			"Title": "Marvel",
+			"Author ID": "A7646",
+			"Author name": "Kiran",
+			"Publisher": "Kiran",
+			"Publish Date": "23-8-2001",
+			"Category ID": "C7244",
+			"Price": 2999,
+			"Sold Count": 80
+		},
+		{
+			"Book ID": "B1003",
+			"Title": "Iron Man",
+			"Author ID": "A7888",
+			"Author name": "Surya",
+			"Publisher": "Ram",
+			"Publish Date": "23-8-1999",
+			"Category ID": "C1009",
+			"Price": 1999,
+			"Sold Count": 1090
+		}
+	]
+}]
+
+
+
+"########################################Sample input for getBooksByAuthor()###################################"
+[{
+	"input_authorid": "A7646",
+	"values": [{
+			"Book ID": "B1001",
+			"Title": "Jungle Book",
+			"Author ID": "A7646",
+			"Publisher": "Dinesh",
+			"Publish Date": "23-8-1998",
+			"Category ID": "C7244",
+			"Price": 999,
+			"Sold Count": 90
+		},
+		{
+			"Book ID": "B1002",
+			"Title": "Marvel",
+			"Author ID": "A7646",
+			"Publisher": "Kiran",
+			"Publish Date": "23-8-2001",
+			"Category ID": "C1006",
+			"Price": 2999,
+			"Sold Count": 80
+		},
+		{
+			"Book ID": "B1003",
+			"Title": "Iron Man",
+			"Author ID": "A7646",
+			"Publisher": "Ram",
+			"Publish Date": "23-8-1999",
+			"Category ID": "C1009",
+			"Price": 1999,
+			"Sold Count": 1090
+		}
+	]
+}]
